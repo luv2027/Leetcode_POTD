@@ -27,10 +27,10 @@ public:
     {
       if (x.second == maxi)
       {
-        c += x.second;
+        c++;
       }
     }
 
-    return c;
+    return c * maxi;
   }
 };
