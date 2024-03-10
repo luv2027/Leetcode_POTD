@@ -14,14 +14,13 @@ public:
     if (num_of_bits_left != num_of_bits_right)
     {
       return 0;
-    }
 
-    long long ans = left & right;
-    for (long long i = (long long)left + 1; i < right; i++)
-    {
-      ans = ans & i;
-    }
+      long long ans = left & right;
+      for (long long i = (long long)left + 1; i < right; i++)
+      {
+        ans = ans & i;
+      }
 
-    return ans;
-  }
-};
+      return ans;
+    }
+  };
